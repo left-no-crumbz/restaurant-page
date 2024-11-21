@@ -28,12 +28,22 @@ const cardWrapper = document.createElement("div");
 const freshCard = document.createElement("div");
 const creativeCard = document.createElement("div");
 const healthyCard = document.createElement("div");
+
+const freshInner = document.createElement("div");
+const creativeInner = document.createElement("div");
+const healthyInner = document.createElement("div");
+
 const freshIcon = document.createElement("img");
 const creativeIcon = document.createElement("img");
 const healthyIcon = document.createElement("img");
+
 const freshContent = document.createElement("p");
 const creativeContent = document.createElement("p");
 const healthyContent = document.createElement("p");
+
+const freshTitle = document.createElement("h2");
+const creativeTitle = document.createElement("h2");
+const healthyTitle = document.createElement("h2");
 
 // set the text contents and src
 paragraph.textContent = "At Sage Gourmet, we believe that every meal should be a celebration of freshness, health, and unforgettable taste. Specializing in salads that are as vibrant as they are delicious, we transform simple, wholesome ingredients into culinary works of art."
@@ -46,7 +56,11 @@ freshIcon.src = freshImg;
 creativeIcon.src = creativeImg;
 healthyIcon.src = healthyImg;
 freshContent.textContent = "Locally-sourced ingredients for unbeatable flavor and sustainability.";
-
+freshTitle.textContent = "Fresh";
+creativeTitle.textContent = "Creative";
+healthyTitle.textContent = "Healthy";
+creativeContent.textContent = "From classic Caesar to exotic quinoa bowls, every salad is thoughtfully designed.";
+healthyContent.textContent = "Packed with nutrients and bursting with flavor—no compromises here.";
 
 // add classes to the text div
 text.classList.add("hero-text");
@@ -66,15 +80,13 @@ promiseContent.classList.add("promise-content");
 freshCard.classList.add("card");
 creativeCard.classList.add("card");
 healthyCard.classList.add("card");
-
-
 cardWrapper.classList.add("card-wrapper");
 cardWrapper.classList.add("flex");
 cardWrapper.classList.add("justify-space-between");
 whySageHeader.classList.add("sage-header");
-
-
-
+freshInner.classList.add("inner");
+creativeInner.classList.add("inner");
+healthyInner.classList.add("inner");
 
 
 text.appendChild(title);
@@ -90,12 +102,20 @@ whySageSection.appendChild(whySageHeader);
 cardWrapper.appendChild(freshCard);
 cardWrapper.appendChild(creativeCard);
 cardWrapper.appendChild(healthyCard);
-freshCard.appendChild(freshIcon);
-freshCard.appendChild(freshContent);
-creativeCard.appendChild(creativeIcon);
-creativeCard.appendChild(creativeContent);
-healthyCard.appendChild(healthyIcon);
-healthyCard.appendChild(healthyContent);
+
+freshInner.appendChild(freshIcon);
+freshInner.appendChild(freshTitle);
+freshInner.appendChild(freshContent);
+creativeInner.appendChild(creativeIcon);
+creativeInner.appendChild(creativeTitle);
+creativeInner.appendChild(creativeContent);
+healthyInner.appendChild(healthyIcon);
+healthyInner.appendChild(healthyTitle);
+healthyInner.appendChild(healthyContent);
+
+freshCard.appendChild(freshInner);
+creativeCard.appendChild(creativeInner);
+healthyCard.appendChild(healthyInner);
 
 whySageSection.appendChild(cardWrapper);
 

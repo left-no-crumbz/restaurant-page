@@ -150,6 +150,6 @@ footer {
     }
 }
 
-section, .hero-div {
+section:not(.hero-text), .hero-div {
     margin-bottom: 10rem;
 }

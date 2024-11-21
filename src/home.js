@@ -2,11 +2,11 @@ import heroImg from "./assets/hero-image.webp";
 import freshImg from "./assets/fresh.png";
 import creativeImg from "./assets/creative.png";
 import healthyImg from "./assets/healthy.png";
-import "./styles.css";
+import "./home.css";
 
 console.log("Hi Mom!");
 
-const initialPageLoad = (() => {
+const homePage = (() => {
 // Hero section
 const content = document.getElementById("content");
 const text = document.createElement("section");
@@ -122,5 +122,4 @@ whySageSection.appendChild(cardWrapper);
 content.appendChild(heroDiv);
 content.appendChild(ourPromiseSection);
 content.append(whySageSection);
-
 })();

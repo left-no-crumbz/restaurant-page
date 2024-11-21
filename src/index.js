@@ -1,1 +1,3 @@
-import initialPageLoad from "./home.js";
+import "./base.css";
+
+import homePage from "./home.js";

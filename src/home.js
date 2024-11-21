@@ -6,7 +6,7 @@ import "./home.css";
 
 console.log("Hi Mom!");
 
-const homePage = (() => {
+export function homePage () {
 // Hero section
 const content = document.getElementById("content");
 const text = document.createElement("section");
@@ -84,6 +84,7 @@ cardWrapper.classList.add("card-wrapper");
 cardWrapper.classList.add("flex");
 cardWrapper.classList.add("justify-space-between");
 whySageHeader.classList.add("sage-header");
+whySageSection.classList.add("sage-section");
 freshInner.classList.add("inner");
 creativeInner.classList.add("inner");
 healthyInner.classList.add("inner");
@@ -122,4 +123,4 @@ whySageSection.appendChild(cardWrapper);
 content.appendChild(heroDiv);
 content.appendChild(ourPromiseSection);
 content.append(whySageSection);
-})();
+};

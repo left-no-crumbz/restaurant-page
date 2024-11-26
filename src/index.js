@@ -20,5 +20,4 @@ menuBtn.addEventListener("mousedown", () => {
 
 homeBtn.addEventListener("mousedown", () => {
     homePage();
-
 });

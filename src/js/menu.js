@@ -83,5 +83,4 @@ export function displayMenuPage() {
 
     content.appendChild(grid);
     
-    // TODO: Add images, title, and desc as block then place-item: center them
 }

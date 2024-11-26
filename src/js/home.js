@@ -1,8 +1,8 @@
-import heroImg from "./assets/hero-image.webp";
-import freshImg from "./assets/fresh.png";
-import creativeImg from "./assets/creative.png";
-import healthyImg from "./assets/healthy.png";
-import "./home.css";
+import heroImg from "../assets/hero-image.webp";
+import freshImg from "../assets/fresh.png";
+import creativeImg from "../assets/creative.png";
+import healthyImg from "../assets/healthy.png";
+import "../css/home.css";
 import { contentDiv as content } from "./index.js";
 console.log("Hi Mom!");
 

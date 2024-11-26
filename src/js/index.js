@@ -1,4 +1,4 @@
-import "./base.css";
+import "../css/base.css";
 import { homePage } from "./home.js";
 import { menuPage } from "./menu.js";
 
@@ -10,7 +10,7 @@ const contactBtn = document.getElementById("contact");
 homePage();
 
 function wipeContent() {
-    while (contentDiv.children.length !== 0) {
+    while (contentDiv.firstChild) {
         contentDiv.removeChild(contentDiv.firstChild);
     }
 }

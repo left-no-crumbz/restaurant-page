@@ -1,9 +1,9 @@
-import "./base.css";
-import "./menu.css";
-import citrusSalad from "./assets/citrus-salad.webp";
-import proteinSalad from "./assets/protein-salad.webp";
-import diySalad from "./assets/diy-salad.webp";
-import mediterraneanSalad from "./assets/mediterranean-salad.webp";
+import "../css/base.css";
+import "../css/menu.css";
+import citrusSalad from "../assets/citrus-salad.webp";
+import proteinSalad from "../assets/protein-salad.webp";
+import diySalad from "../assets/diy-salad.webp";
+import mediterraneanSalad from "../assets/mediterranean-salad.webp";
 import { contentDiv as content } from "./index.js";
 
 export function menuPage() {

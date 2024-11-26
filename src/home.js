@@ -3,12 +3,12 @@ import freshImg from "./assets/fresh.png";
 import creativeImg from "./assets/creative.png";
 import healthyImg from "./assets/healthy.png";
 import "./home.css";
-
+import { contentDiv as content } from "./index.js";
 console.log("Hi Mom!");
 
 export function homePage () {
 // Hero section
-const content = document.getElementById("content");
+
 const text = document.createElement("section");
 const img = document.createElement("img");
 const title = document.createElement("h1");

@@ -1,23 +1,26 @@
 import "./base.css";
 import { homePage } from "./home.js";
+import { menuPage } from "./menu.js";
 
-const contentDiv = document.getElementById("content");
+export const contentDiv = document.getElementById("content");
 const homeBtn = document.getElementById("home");
 const menuBtn = document.getElementById("menu");
 const contactBtn = document.getElementById("contact");
 
 homePage();
 
-menuBtn.addEventListener("mousedown", () => {
-    const childrenNodes = Array.from(contentDiv.children);
-
-    for (const childNode of childrenNodes) {
-        console.log(childNode);
-        contentDiv.removeChild(childNode);
+function wipeContent() {
+    while (contentDiv.children.length !== 0) {
+        contentDiv.removeChild(contentDiv.firstChild);
     }
+}
 
+menuBtn.addEventListener("mousedown", () => {
+    wipeContent();
+    menuPage();
 });
 
 homeBtn.addEventListener("mousedown", () => {
+    wipeContent();
     homePage();
 });

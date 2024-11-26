@@ -6,7 +6,7 @@ import diySalad from "../assets/diy-salad.webp";
 import mediterraneanSalad from "../assets/mediterranean-salad.webp";
 import { contentDiv as content } from "./index.js";
 
-export function menuPage() {
+export function displayMenuPage() {
     const grid = document.createElement("div");
     grid.classList.add("grid");
     
@@ -46,7 +46,14 @@ export function menuPage() {
     diySaladImg.src = diySalad;
     mediterraneanSaladImg.src = mediterraneanSalad;
     
+    mediterraneanSaladImg.loading = "lazy";
+    diySaladImg.loading = "lazy";
     
+    citrusSaladImg.decoding = "async";
+    proteinSaladImg.decoding = "async";
+    mediterraneanSaladImg.decoding = "async";
+    diySaladImg.decoding = "async";
+
     citrusSaladImg.classList.add("menu-img");
     proteinSaladImg.classList.add("menu-img");
     diySaladImg.classList.add("menu-img");

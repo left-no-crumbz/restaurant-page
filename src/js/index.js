@@ -1,13 +1,14 @@
 import "../css/base.css";
-import { homePage } from "./home.js";
-import { menuPage } from "./menu.js";
+import { displayHomePage } from "./home.js";
+import { displayMenuPage } from "./menu.js";
+import { displayContactPage } from "./contact.js";
 
 export const contentDiv = document.getElementById("content");
 const homeBtn = document.getElementById("home");
 const menuBtn = document.getElementById("menu");
 const contactBtn = document.getElementById("contact");
 
-homePage();
+displayHomePage();
 
 function wipeContent() {
     while (contentDiv.firstChild) {
@@ -17,10 +18,15 @@ function wipeContent() {
 
 menuBtn.addEventListener("mousedown", () => {
     wipeContent();
-    menuPage();
+    displayMenuPage();
 });
 
 homeBtn.addEventListener("mousedown", () => {
     wipeContent();
-    homePage();
+    displayHomePage();
+});
+
+contactBtn.addEventListener("mousedown", () => {
+    wipeContent();
+    displayContactPage();
 });

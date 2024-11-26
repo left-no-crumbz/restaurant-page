@@ -6,7 +6,7 @@ import "../css/home.css";
 import { contentDiv as content } from "./index.js";
 console.log("Hi Mom!");
 
-export function homePage () {
+export function displayHomePage () {
 // Hero section
 
 const text = document.createElement("section");
@@ -52,9 +52,20 @@ ourPromiseHeader.textContent = "Our Promise"
 promiseContent.textContent = "We hand-select the freshest greens, the ripest vegetables, and the most flavorful toppings to craft salads that not only nourish but delight your senses. Whether you're craving something light and crisp or hearty and satisfying, our menu has something to suit every palate.";
 img.src = heroImg;
 whySageHeader.textContent = "Why Choose Us?"
+
 freshIcon.src = freshImg;
 creativeIcon.src = creativeImg;
 healthyIcon.src = healthyImg;
+
+freshIcon.loading = "lazy";
+creativeIcon.loading = "lazy";
+healthyIcon.loading = "lazy";
+
+freshIcon.decoding = "async";
+creativeIcon.decoding = "async";
+healthyIcon.decoding = "async";
+
+
 freshContent.textContent = "Locally-sourced ingredients for unbeatable flavor and sustainability.";
 freshTitle.textContent = "Fresh";
 creativeTitle.textContent = "Creative";
